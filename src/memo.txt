@@ -1,3 +1,5 @@
 fallthrough		:	switch 문 해당 case 에서 다음 case도 무조건 실행
-
 iota			:	const 선언에서 자동 증가 값 
+range			:	배열 자동 반복
+defer			:	메소드 종료 후 순차적 실행
+package strconv	:	Atoi > string 을 int 로 변환		/	Itoa > int 를 string 으로 변환

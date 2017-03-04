@@ -34,4 +34,11 @@ func main2() {
 	for i := 0; i < len(array); i++ {
 		fmt.Println("array ", i, " = ", array[i])
 	}
+
+	fmt.Println("==================")
+
+	for index, value := range array {
+		fmt.Println(">>>", index, "=", value)
+	}
+
 }
