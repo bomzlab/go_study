@@ -3,3 +3,11 @@ iota			:	const 선언에서 자동 증가 값
 range			:	배열 자동 반복
 defer			:	메소드 종료 후 순차적 실행
 package strconv	:	Atoi > string 을 int 로 변환		/	Itoa > int 를 string 으로 변환
+
+동기화
+sync.Once		:	1회만 실행할 수 있는 락
+					변수명.once.Do(func(){
+						... 실행 코드 ...
+					})
+sync.Mutex		:	일반적인 락
+sync.atomic		:	숫자 연산 때 동기화. cpu 분할을 하지 않고 해당 작업이 끝날때까지 작업 수행

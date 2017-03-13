@@ -5,7 +5,7 @@ import (
 	m "parsetest"
 )
 
-func main() {
+func main6() {
 
 	v := m.ToInt("3")
 	fmt.Println("toInt :: ", v)
