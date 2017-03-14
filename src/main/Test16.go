@@ -5,7 +5,7 @@ import (
 	bmap "model/maps"
 )
 
-func main() {
+func main16() {
 	//	m := bmap.NewSyncMap()
 	//	fmt.Println("count %d", m.Count())
 	//
