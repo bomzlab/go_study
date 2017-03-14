@@ -11,3 +11,15 @@ sync.Once		:	1회만 실행할 수 있는 락
 					})
 sync.Mutex		:	일반적인 락
 sync.atomic		:	숫자 연산 때 동기화. cpu 분할을 하지 않고 해당 작업이 끝날때까지 작업 수행
+
+
+한글처리
+패키지 설치			:	go get golang.org/x/text
+코드
+					msg := "한글입니다"
+					var bufs bytes.Buffer
+					wr := transform.NewWriter(&bufs, korean.EUCKR.NewEncoder())
+					wr.Write([]byte(msg))
+					wr.Close()
+					fmt.Println(bufs.String())
+					
